@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.game {
+  margin: -9px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 40%;
+  height: 100vh;
+}
+
+.game-info {
+  background-color: gold;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+li {
+  width: 50px;
+  margin-bottom: 5px;
+  border: 2px solid;
+  border-color: black;
+}
+
+.game-buttons {
+  background-color: gold;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 30%;
+}
+
+.btn {
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+.difficult {
+  margin-left: 10px;
+}
+
+/*Стили при правильном и неправильном ответе*/
+
+.activeWin {
+  background-color: greenyellow;
+}
+.activeLose {
+  background-color: red;
 }
